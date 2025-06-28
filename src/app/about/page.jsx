@@ -32,7 +32,7 @@ function Values() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Effectiveness" invert>
-            We choose proven methods and tailor them for each learner's unique needs.
+            We choose proven methods and tailor them for each learner&apos;s unique needs.
           </GridListItem>
           <GridListItem title="Efficiency" invert>
             We maximize learning outcomes in the shortest possible time.
