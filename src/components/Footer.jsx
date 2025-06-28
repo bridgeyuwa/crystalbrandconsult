@@ -85,8 +85,7 @@ function NewsletterForm() {
         Sign up for our newsletter
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Subscribe to receive updates on academic opportunities from Crystal Brand Educational Consult
       </p>
       <div className="relative mt-6">
         <input
