@@ -135,7 +135,7 @@ export default async function Work() {
         <p>
           At Crystal Brand Educational Consult, we believe in efficiency, quality,
            and delivering measurable results for our clients. Explore our diverse 
-           range of case studies and success stories, each demonstrating how our 
+           range of services and success stories, each demonstrating how our 
            tailored educational services make a real difference for students, 
            parents, and professionals.
         </p>

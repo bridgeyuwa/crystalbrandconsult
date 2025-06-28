@@ -31,11 +31,9 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">Year</dt>
+                      <dt className="font-semibold">Category</dt>
                       <dd>
-                        <time dateTime={caseStudy.date.split('-')[0]}>
-                          {caseStudy.date.split('-')[0]}
-                        </time>
+                       Education
                       </dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
