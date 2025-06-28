@@ -69,7 +69,7 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Our mission is to combine refined and practical teaching methodologies to help our clients achieve academic excellence. We provide a personalized approach for every learner, whether they’re preparing for exams, struggling in class, or striving for the top.
+            Our mission is to combine refined and practical teaching methodologies to help our clients achieve academic excellence. We provide a personalized approach for every learner, whether they are preparing for exams, struggling in class, or striving for the top.
           </p>
         </div>
       </PageIntro>
