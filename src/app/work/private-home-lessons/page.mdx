@@ -1,0 +1,57 @@
+import logo from '@/images/clients/private-home-lessons/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Private Home Lessons',
+  title: 'Achieving Peak Academic Performance Through Personalized Home Lessons',
+  description:
+    'Crystal Brand Educational Consult delivers private home lessons for kids, helping them aspire to and attain peak academic performance with tailored, in-home tutoring.',
+  summary: [
+    'Our private home lessons provide personalized attention and targeted support for young learners aiming for the top of their class.',
+    'Through structured lesson plans and consistent feedback, students develop strong foundational skills and renewed academic confidence.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Private Home Lessons, Personalized Tutoring',
+  testimonial: {
+    author: { name: 'Mrs. Amaka O.', role: 'Parent' },
+    content:
+      'The personalized lessons from Crystal Brand Educational Consult made a world of difference for my child. They now excel in their studies and enjoy learning every day.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Many parents seek high-quality, personalized support to help their children reach their full academic potential. Crystal Brand Educational Consult’s private home lessons offer tailored instruction, covering each child’s unique learning needs and academic goals.
+
+Our experienced tutors work one-on-one with students, focusing on building confidence, mastering core subjects, and nurturing a love for learning within the comfort of the home environment.
+
+## What we did
+
+<TagList>
+  <TagListItem>Home-Based Tutoring</TagListItem>
+  <TagListItem>Personalized Lesson Plans</TagListItem>
+  <TagListItem>Foundational Skills Development</TagListItem>
+  <TagListItem>Parental Feedback & Support</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Mrs. Amaka O.', role: 'Parent' }}
+  image={{ src: imageStudent }}
+>
+  The personalized lessons from Crystal Brand Educational Consult made a world of difference for my child. They now excel in their studies and enjoy learning every day.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="90%" label="Improvement in grades" />
+  <StatListItem value="4x" label="Student engagement" />
+  <StatListItem value="100%" label="Parental satisfaction" />
+  <StatListItem value="Top 10%" label="Class standing" />
+</StatList>

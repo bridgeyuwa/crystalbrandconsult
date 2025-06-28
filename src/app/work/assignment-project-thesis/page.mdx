@@ -1,0 +1,55 @@
+import logo from '@/images/clients/assignment-project-thesis/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Assignment, Project, & Thesis Support',
+  title: 'Supporting Academic Excellence from Undergraduate to Postgraduate',
+  description:
+    'Crystal Brand Educational Consult assists with assignments, projects, and theses for both undergraduate and postgraduate students, ensuring high-quality work and academic integrity.',
+  summary: [
+    'Our support services guide students through the research, writing, and review stages of their academic work.',
+    'With expert mentorship and detailed feedback, students complete their assignments and projects successfully and on time.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Assignment Help, Project Support, Thesis Guidance',
+  testimonial: {
+    author: { name: 'Ngozi U.', role: 'Postgraduate Student' },
+    content:
+      'The guidance I received on my thesis from Crystal Brand Educational Consult was invaluable. I finished on time and with confidence!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Completing assignments, projects, and theses can be daunting for many students. Our comprehensive support services provide expert guidance through every stage of academic work, from planning to final submission.
+
+## What we did
+
+<TagList>
+  <TagListItem>Assignment Help</TagListItem>
+  <TagListItem>Project Guidance</TagListItem>
+  <TagListItem>Thesis Support</TagListItem>
+  <TagListItem>Research Mentorship</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Ngozi U.', role: 'Postgraduate Student' }}
+  image={{ src: imageStudent }}
+>
+  The guidance I received on my thesis from Crystal Brand Educational Consult was invaluable. I finished on time and with confidence!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="100%" label="On-time completion" />
+  <StatListItem value="5x" label="Quality improvement" />
+  <StatListItem value="98%" label="Academic integrity" />
+  <StatListItem value="Top grades" label="Final results" />
+</StatList>

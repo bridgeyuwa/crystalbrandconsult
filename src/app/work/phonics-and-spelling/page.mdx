@@ -1,0 +1,57 @@
+import logo from '@/images/clients/phonics-and-spelling/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Phonics and Spelling Classes',
+  title: 'Building Literacy and Confidence with Intensive Phonics',
+  description:
+    'Crystal Brand Educational Consult’s phonics and spelling classes empower both kids and adults to pronounce, read, write, and speak English confidently in a matter of months.',
+  summary: [
+    'Our intensive phonics and spelling program is designed for learners at any stage who need to improve their English language skills.',
+    'Through hands-on practice, tailored exercises, and supportive mentoring, students gain the tools to become fluent readers and communicators.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Phonics, Spelling, Literacy Development',
+  testimonial: {
+    author: { name: 'Amina G.', role: 'Student' },
+    content:
+      'I used to struggle with reading and pronunciation, but the phonics classes at Crystal Brand Educational Consult made everything so much easier. I now enjoy reading and speaking!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Many learners, both young and adult, struggle with reading, pronunciation, and spelling. Our phonics and spelling classes provide a supportive environment where students master foundational literacy skills through engaging exercises, repetition, and professional feedback.
+
+Over the course of just a few months, students transform into confident readers and communicators, equipped for academic and personal success.
+
+## What we did
+
+<TagList>
+  <TagListItem>Phonics Instruction</TagListItem>
+  <TagListItem>Spelling Exercises</TagListItem>
+  <TagListItem>Reading Practice</TagListItem>
+  <TagListItem>Speech & Pronunciation</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Amina G.', role: 'Student' }}
+  image={{ src: imageStudent }}
+>
+  I used to struggle with reading and pronunciation, but the phonics classes at Crystal Brand Educational Consult made everything so much easier. I now enjoy reading and speaking!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="90%" label="Reading proficiency increase" />
+  <StatListItem value="4x" label="Confidence in speaking" />
+  <StatListItem value="100%" label="Literacy milestones achieved" />
+  <StatListItem value="3 months" label="Average time to fluency" />
+</StatList>

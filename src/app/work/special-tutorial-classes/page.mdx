@@ -1,0 +1,55 @@
+import logo from '@/images/clients/special-tutorial-classes/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Special Tutorial Classes',
+  title: 'Helping Struggling Students Overcome Academic Challenges',
+  description:
+    'Crystal Brand Educational Consult offers special tutorial classes for kids who are struggling academically, providing the support they need to catch up and excel.',
+  summary: [
+    'Our special tutorials are designed for students who need extra help, focusing on their weak areas and building confidence.',
+    'With patient, adaptive instruction, students overcome their struggles and achieve significant academic progress.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Special Tutorials, Academic Support',
+  testimonial: {
+    author: { name: 'Chidera U.', role: 'Student' },
+    content:
+      'The special tutorial classes gave me the extra help I needed. I now understand my subjects better and feel much more confident.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Some students face consistent difficulties in school and need focused intervention. Our special tutorial classes address each child’s unique learning gaps, helping them overcome obstacles and achieve academic success.
+
+## What we did
+
+<TagList>
+  <TagListItem>Special Tutorials</TagListItem>
+  <TagListItem>Gap Analysis</TagListItem>
+  <TagListItem>Personalized Support</TagListItem>
+  <TagListItem>Progress Tracking</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Chidera U.', role: 'Student' }}
+  image={{ src: imageStudent }}
+>
+  The special tutorial classes gave me the extra help I needed. I now understand my subjects better and feel much more confident.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="80%" label="Improvement in grades" />
+  <StatListItem value="5x" label="Study engagement" />
+  <StatListItem value="100%" label="Parental satisfaction" />
+  <StatListItem value="Top 20%" label="Academic progress" />
+</StatList>

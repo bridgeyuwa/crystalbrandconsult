@@ -1,0 +1,57 @@
+import logo from '@/images/clients/entrance-exam-prep/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Entrance Exam Preparation',
+  title: 'Success in High-Flying Secondary School Admissions',
+  description:
+    'Crystal Brand Educational Consult’s preparatory classes help students gain admission into elite secondary schools and colleges in Nigeria and abroad.',
+  summary: [
+    'Our comprehensive preparation covers all relevant subjects, exam techniques, and confidence-building exercises for top secondary school entrance exams.',
+    'With mock exams, tailored lessons, and mentorship, students consistently achieve top scores and secure admission to their dream schools.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Entrance Exam Preparation, Mock Testing',
+  testimonial: {
+    author: { name: 'Emeka N.', role: 'Student' },
+    content:
+      'I got into my first-choice school thanks to Crystal Brand Educational Consult! The practice exams and guidance made all the difference.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Securing admission to prestigious secondary schools requires thorough preparation and strategic support. Our entrance exam prep classes combine expert instruction, practice tests, and individualized coaching to equip students for success.
+
+We focus on academic mastery, test-taking strategies, and confidence, ensuring each student is ready to excel on exam day.
+
+## What we did
+
+<TagList>
+  <TagListItem>Entrance Exam Lessons</TagListItem>
+  <TagListItem>Mock Exams</TagListItem>
+  <TagListItem>Exam Strategies</TagListItem>
+  <TagListItem>Mentorship</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Emeka N.', role: 'Student' }}
+  image={{ src: imageStudent }}
+>
+  I got into my first-choice school thanks to Crystal Brand Educational Consult! The practice exams and guidance made all the difference.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="98%" label="Admission success rate" />
+  <StatListItem value="5x" label="Mock test improvement" />
+  <StatListItem value="Top 3%" label="Exam performance" />
+  <StatListItem value="100%" label="Parent satisfaction" />
+</StatList>

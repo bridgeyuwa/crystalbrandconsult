@@ -1,0 +1,55 @@
+import logo from '@/images/clients/homework-supervision/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Homework Supervision',
+  title: 'Transforming Homework into a Learning Opportunity',
+  description:
+    'Crystal Brand Educational Consult supervises homework and assignments for kids who find them tricky or challenging, ensuring they understand concepts and complete their work successfully.',
+  summary: [
+    'Our homework supervision service provides guidance and encouragement, turning homework time into productive learning sessions.',
+    'We help students build independence and responsibility while mastering their assignments.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Homework Supervision, Assignment Support',
+  testimonial: {
+    author: { name: 'Mrs. Ruth E.', role: 'Parent' },
+    content:
+      'Homework is no longer a struggle in our house. Crystal Brand Educational Consult’s supervision made a huge difference for my child!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Many children find homework and assignments overwhelming. Our homework supervision service provides the structure and support needed for students to approach their assignments with confidence and independence.
+
+## What we did
+
+<TagList>
+  <TagListItem>Homework Guidance</TagListItem>
+  <TagListItem>Assignment Support</TagListItem>
+  <TagListItem>Concept Clarification</TagListItem>
+  <TagListItem>Responsibility Building</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Mrs. Ruth E.', role: 'Parent' }}
+  image={{ src: imageStudent }}
+>
+  Homework is no longer a struggle in our house. Crystal Brand Educational Consult’s supervision made a huge difference for my child!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="100%" label="Homework completion" />
+  <StatListItem value="3x" label="Improved understanding" />
+  <StatListItem value="90%" label="Student independence" />
+  <StatListItem value="Top 15%" label="Class engagement" />
+</StatList>

@@ -1,0 +1,57 @@
+import logo from '@/images/clients/adult-literacy/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageAdult from './adult.jpg'
+
+export const caseStudy = {
+  client: 'Executive Adult Literacy Classes',
+  title: 'Empowering Adults with Fluent Reading and Communication Skills',
+  description:
+    'Crystal Brand Educational Consult’s executive adult classes are designed for adults who want to learn to read, write, and communicate effectively in English within the shortest possible time.',
+  summary: [
+    'Our adult literacy program is practical, supportive, and tailored to each learner’s needs, boosting confidence and language skills quickly.',
+    'Through real-world scenarios and engaging lessons, adults improve their reading, writing, and communication abilities for personal and professional growth.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Adult Literacy, Communication Skills, Personal Development',
+  testimonial: {
+    author: { name: 'Mrs. Bisi A.', role: 'Business Owner' },
+    content:
+      'Crystal Brand Educational Consult helped me improve my reading and communication skills for my business and everyday life. I now feel much more confident!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Many adults feel left behind due to limited literacy or communication skills. Our executive adult literacy classes provide a safe, motivating environment for adults to rapidly improve their reading, writing, and speaking abilities.
+
+With personalized coaching and real-life practice, learners achieve their goals in record time, enhancing both personal and professional opportunities.
+
+## What we did
+
+<TagList>
+  <TagListItem>Adult Literacy</TagListItem>
+  <TagListItem>Writing Skills</TagListItem>
+  <TagListItem>Communication Coaching</TagListItem>
+  <TagListItem>Personalized Support</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Mrs. Bisi A.', role: 'Business Owner' }}
+  image={{ src: imageAdult }}
+>
+  Crystal Brand Educational Consult helped me improve my reading and communication skills for my business and everyday life. I now feel much more confident!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="100%" label="Increase in reading confidence" />
+  <StatListItem value="2x" label="Improvement in writing skills" />
+  <StatListItem value="90%" label="Communication proficiency" />
+  <StatListItem value="3 months" label="Time to results" />
+</StatList>

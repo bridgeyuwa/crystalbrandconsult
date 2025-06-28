@@ -1,0 +1,55 @@
+import logo from '@/images/clients/foreign-exam-prep/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Foreign & Local Exam Prep',
+  title: 'Achieving Success in Foreign and Local Examinations',
+  description:
+    'Crystal Brand Educational Consult’s tutorial classes prepare students for foreign exams such as SAT, PSAT, IELTS, TOEFL, GRE, IGCSE, GMAT, and local exams like WASSCE, NECO, UTME, NABTEB, JWAEC, JNECO, and more.',
+  summary: [
+    'Our exam prep programs equip students with the skills and confidence to ace both foreign and local standardized tests.',
+    'With focused lessons, practice tests, and expert coaching, our students achieve top scores and reach their academic goals.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Exam Preparation, Test Coaching',
+  testimonial: {
+    author: { name: 'Ifeanyi O.', role: 'Student' },
+    content:
+      'Thanks to Crystal Brand Educational Consult, I scored above my target in both SAT and IELTS. Their coaching and encouragement made my dream of studying abroad a reality.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Students aiming for higher education often face tough entrance exams. Our foreign and local exam prep classes provide the tools, strategies, and support necessary to excel in standardized tests and gain admission to top institutions.
+
+## What we did
+
+<TagList>
+  <TagListItem>SAT/IELTS/TOEFL/UTME Prep</TagListItem>
+  <TagListItem>Practice Tests</TagListItem>
+  <TagListItem>Exam Strategy Coaching</TagListItem>
+  <TagListItem>Motivational Support</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Ifeanyi O.', role: 'Student' }}
+  image={{ src: imageStudent }}
+>
+  Thanks to Crystal Brand Educational Consult, I scored above my target in both SAT and IELTS. Their coaching and encouragement made my dream of studying abroad a reality.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="95%" label="Exam pass rate" />
+  <StatListItem value="1200+" label="Average SAT score" />
+  <StatListItem value="8.0" label="Average IELTS band" />
+  <StatListItem value="100%" label="Student satisfaction" />
+</StatList>

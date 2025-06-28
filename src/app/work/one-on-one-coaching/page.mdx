@@ -1,0 +1,57 @@
+import logo from '@/images/clients/one-on-one-coaching/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'One-on-One Private Coaching',
+  title: 'Propelling Students to Academic Excellence with Targeted Coaching',
+  description:
+    'Crystal Brand Educational Consult offers one-on-one private coaching for students who need an extra academic push, ensuring focused attention and measurable progress.',
+  summary: [
+    'Our individualized coaching programs are designed for students who need targeted support to overcome academic hurdles.',
+    'With expert tutors and custom strategies, students achieve breakthroughs in challenging subjects and improve their overall performance.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'One-on-One Coaching, Academic Support',
+  testimonial: {
+    author: { name: 'Samuel A.', role: 'Student' },
+    content:
+      'The one-on-one coaching sessions helped me understand concepts I struggled with in class. My grades improved, and so did my confidence!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Some students require focused, individualized attention to unlock their full academic potential. Our one-on-one coaching sessions are tailored to the student’s needs, strengths, and learning style, ensuring that they receive the support and encouragement necessary to succeed.
+
+Through regular assessments and adaptive lesson planning, students quickly overcome obstacles, master challenging topics, and build lasting academic confidence.
+
+## What we did
+
+<TagList>
+  <TagListItem>Individual Coaching</TagListItem>
+  <TagListItem>Adaptive Lesson Planning</TagListItem>
+  <TagListItem>Progress Monitoring</TagListItem>
+  <TagListItem>Academic Mentorship</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Samuel A.', role: 'Student' }}
+  image={{ src: imageStudent }}
+>
+  The one-on-one coaching sessions helped me understand concepts I struggled with in class. My grades improved, and so did my confidence!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="85%" label="Academic improvement" />
+  <StatListItem value="3x" label="Confidence growth" />
+  <StatListItem value="100%" label="Personalized progress tracking" />
+  <StatListItem value="Top 15%" label="Class ranking" />
+</StatList>

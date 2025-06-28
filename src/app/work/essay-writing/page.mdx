@@ -1,0 +1,55 @@
+import logo from '@/images/clients/essay-writing/logo-dark.svg'
+import imageHero from './hero.jpg'
+import imageStudent from './student.jpg'
+
+export const caseStudy = {
+  client: 'Essay, Script, & Proposal Writing',
+  title: 'Mastering Academic and Business Writing Skills',
+  description:
+    'Crystal Brand Educational Consult offers essay and script writing services, as well as the development of business plans and proposals for students and professionals.',
+  summary: [
+    'Our writing services help students and professionals craft compelling essays, scripts, and proposals for academic and business success.',
+    'With tailored feedback and expert guidance, our clients consistently produce top-quality written work.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'Academic Writing, Business Writing',
+  testimonial: {
+    author: { name: 'Chuka E.', role: 'Undergraduate' },
+    content:
+      'I always struggled with essays and proposals until I got help from Crystal Brand Educational Consult. Their support made my writing so much better!',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Effective writing skills are essential for both academic and professional success. Our essay, script, and business plan writing services provide expert support to help clients develop clear, persuasive, and impactful documents.
+
+## What we did
+
+<TagList>
+  <TagListItem>Essay Writing</TagListItem>
+  <TagListItem>Script Writing</TagListItem>
+  <TagListItem>Business Plan Development</TagListItem>
+  <TagListItem>Proposal Writing</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Chuka E.', role: 'Undergraduate' }}
+  image={{ src: imageStudent }}
+>
+  I always struggled with essays and proposals until I got help from Crystal Brand Educational Consult. Their support made my writing so much better!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="100%" label="Submission success rate" />
+  <StatListItem value="4x" label="Writing skill improvement" />
+  <StatListItem value="95%" label="Client satisfaction" />
+  <StatListItem value="Top marks" label="Academic results" />
+</StatList>
