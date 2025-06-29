@@ -72,39 +72,37 @@ function ContactDetails() {
           Call or WhatsApp us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          
-
+          <div className='space-y-6'>
+            <div>
+              <dt className="font-semibold text-neutral-950">Mr. Moses Ekwu (CEO/MD)</dt>
+              <dd className="space-y-1">
+                <Link href="tel:+2347038366784" className="text-neutral-600 hover:text-neutral-950 block">
+                  0703 836 6784
+                </Link>
+                <Link href="tel:+2348138676772" className="text-neutral-600 hover:text-neutral-950 block">
+                  0813 867 6772
+                </Link>
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-neutral-950">Mr. Nathan (Coordinator)</dt>
+              <dd className="space-y-1">
+                <Link href="tel:+2347036600049" className="text-neutral-600 hover:text-neutral-950 block">
+                  0703 660 0049
+                </Link>
+                <Link href="tel:+2347016000401" className="text-neutral-600 hover:text-neutral-950 block">
+                  0701 600 0401
+                </Link>
+              </dd>
+            </div>
+          </div>
 
           <div className='space-y-6'>
           <div>
-            <dt className="font-semibold text-neutral-950">Mr. Moses Ekwu (CEO/MD)</dt>
-            <dd className="space-y-1">
-              <Link href="tel:+2347038366784" className="text-neutral-600 hover:text-neutral-950 block">
-                0703 836 6784
-              </Link>
-              <Link href="tel:+2348138676772" className="text-neutral-600 hover:text-neutral-950 block">
-                0813 867 6772
-              </Link>
-            </dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-neutral-950">Mr. Nathan (Coordinator)</dt>
-            <dd className="space-y-1">
-              <Link href="tel:+2347036600049" className="text-neutral-600 hover:text-neutral-950 block">
-                0703 660 0049
-              </Link>
-              <Link href="tel:+2347016000401" className="text-neutral-600 hover:text-neutral-950 block">
-                0701 600 0401
-              </Link>
-            </dd>
-          </div> </div>
-          
-
-          <div>
-            <dt className="font-semibold text-neutral-950">WhatsApp</dt>
+            <dt className="font-semibold text-neutral-950">WhatsApp (Mr Moses Ekwu)</dt>
             <dd>
               <Link
-                href="https://wa.me/2348034567890"
+                href="https://wa.me/2347038366784"
                 className="text-neutral-600 hover:text-neutral-950"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -112,6 +110,20 @@ function ContactDetails() {
                 Chat on WhatsApp
               </Link>
             </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-neutral-950">WhatsApp (Mr Nathan)</dt>
+            <dd>
+              <Link
+                href="https://wa.me/2347036600049"
+                className="text-neutral-600 hover:text-neutral-950"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat on WhatsApp
+              </Link>
+            </dd>
+          </div>
           </div>
         </dl>
       </Border>

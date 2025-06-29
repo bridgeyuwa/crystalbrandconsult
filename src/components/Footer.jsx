@@ -11,8 +11,8 @@ const navigation = [
     title: 'Company',
     links: [
       { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Our work', href: '/work' },
+      { title: 'Our services', href: '/work' },
+      { title: 'How we work', href: '/process' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
