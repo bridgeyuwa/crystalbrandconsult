@@ -163,7 +163,7 @@ function ContactDetails() {
           Our office
         </h2>
         <p className="mt-6 text-base text-neutral-600">
-          Suite 18(E) Second Floor, Jinifa Plaza
+          Suite 18(E) Second Floor, Jinifa Plaza,
           Central Business District, Abuja, FCT, Nigeria.
         </p>
       </Border>
