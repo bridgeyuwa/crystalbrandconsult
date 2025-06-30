@@ -7,6 +7,9 @@ export const metadata = {
     template: '%s - Crystal Brand Educational Consult',
     default: 'Crystal Brand Educational Consult',
   },
+  icons: {
+    icon: '/favicon.ico?v=2',
+  },
   manifest: '/site.webmanifest',
 }
 
