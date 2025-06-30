@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
+import { Logo,LogoLong } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
@@ -106,7 +106,7 @@ export function Footer() {
         </div>
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <LogoLong className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
             © Crystal Brand Educational Consult. {new Date().getFullYear()}

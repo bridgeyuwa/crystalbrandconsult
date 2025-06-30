@@ -19,6 +19,17 @@ import clsx from 'clsx'
 
 export function Logo({ className, ...props }) {
   return (
+     <img
+      src="/logo.png"
+      alt="Crystal Brand Educational Consult"
+      className={clsx(className)}
+      {...props}
+    />
+  )
+}
+
+export function LogoShort({ className, ...props }) {
+  return (
     <span className={clsx('inline-flex items-center space-x-2', className)} {...props}>
       <img
         src="/logo.png"
@@ -27,6 +38,21 @@ export function Logo({ className, ...props }) {
       />
       <span className="text-lg font-semibold whitespace-nowrap">
         Crystal Brand
+      </span>
+    </span>
+  )
+}
+
+export function LogoLong({ className, ...props }) {
+  return (
+    <span className={clsx('inline-flex items-center space-x-2', className)} {...props}>
+      <img
+        src="/logo.png"
+        alt="Crystal Brand Educational Consult"
+        className="h-8 w-auto"
+      />
+      <span className="text-lg font-semibold whitespace-nowrap">
+        Crystal Brand Educational Consult
       </span>
     </span>
   )
