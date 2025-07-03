@@ -92,16 +92,14 @@ function CaseStudies({ caseStudies }) {
           ))}
         </FadeInStagger>
 
-
         <div className="mt-6 flex justify-center">
           <Link
             href="/work"
-            className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
-            aria-label={`View all services`}
+            className="flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+            aria-label="View all services"
           >
             View all services
             <ArrowIcon className="w-6 flex-none fill-current" />
-            <span className="absolute inset-0" />
           </Link>
         </div>
 
