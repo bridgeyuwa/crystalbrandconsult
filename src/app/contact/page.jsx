@@ -30,33 +30,6 @@ function TextInput({ label, ...props }) {
   )
 }
 
-function ContactForm() {
-  return (
-    <FadeIn className="lg:order-last">
-      <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Contact Form
-        </h2>
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <TextInput
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-          />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Subject" name="subject" />
-          <TextInput label="Message" name="message" />
-        </div>
-        <Button type="submit" className="mt-10">
-          Send Message
-        </Button>
-      </form>
-    </FadeIn>
-  )
-}
-
 function ContactDetails() {
   return (
     <FadeIn>
@@ -99,10 +72,10 @@ function ContactDetails() {
 
           <div className='space-y-6'>
           <div>
-            <dt className="font-semibold text-neutral-950">WhatsApp (Mr Moses Ekwu)</dt>
+            <dt className="font-semibold text-neutral-950">WhatsApp</dt>
             <dd>
               <Link
-                href="https://wa.me/2347038366784"
+                href="https://wa.me/2348138676772"
                 className="text-neutral-600 hover:text-neutral-950"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,19 +84,7 @@ function ContactDetails() {
               </Link>
             </dd>
           </div>
-          <div>
-            <dt className="font-semibold text-neutral-950">WhatsApp (Mr Nathan)</dt>
-            <dd>
-              <Link
-                href="https://wa.me/2347036600049"
-                className="text-neutral-600 hover:text-neutral-950"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
-              </Link>
-            </dd>
-          </div>
+          
           </div>
         </dl>
       </Border>
@@ -194,8 +155,8 @@ export default function Contact() {
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
+        <div className="grid grid-cols-1 gap-y-24">
+         
           <ContactDetails />
         </div>
       </Container>
