@@ -21,15 +21,16 @@ function Clients() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-lg font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-2xl font-semibold tracking-wider text-white sm:text-left">
             We’ve helped students, families, and professionals achieve their goals
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
         <FadeInStagger faster>
 
-          <div className="text-white mt-5">— Moses Ekwu, CEO, Crystal Brand Educational Consult</div>
-
+          <div className="text-white mt-5 italic">
+            — <span className="font-semibold">Moses Ekwu</span>, CEO, <span className="font-medium">Crystal Brand Educational Consult</span>
+          </div>
         </FadeInStagger>
       </Container>
     </div>
@@ -55,11 +56,11 @@ function CaseStudies({ caseStudies }) {
                 <h3>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
-                    
+
                   </Link>
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  
+
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
