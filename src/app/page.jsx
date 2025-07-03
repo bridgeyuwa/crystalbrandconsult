@@ -164,7 +164,36 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+
+      <Container className="mt-24 sm:mt-24 md:mt-24 text-center">
+        <FadeIn className="max-w-3xl mx-auto">
+          <Image
+            src="/logo.png"
+            alt="Crystal Brand Educational Consult"
+            width={160} // Adjust as needed
+            height={80}
+            className="mx-auto mb-6"
+          />
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 sm:text-7xl">
+            Personalized education. Proven results.
+          </h1>
+          <p className="mt-6 text-xl text-neutral-600">
+            Crystal Brand Educational Consult is dedicated to helping learners of all ages achieve academic and professional success through expert guidance and supportive teaching.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/services"
+              className="inline-block rounded-lg bg-neutral-900 px-6 py-3 text-white hover:bg-neutral-700"
+            >
+              Explore Our Services →
+            </Link>
+          </div>
+        </FadeIn>
+      </Container>
+
+
+
+      {/* <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
             Personalized education. Proven results.
@@ -173,7 +202,7 @@ export default async function Home() {
             Crystal Brand Educational Consult is dedicated to helping learners of all ages achieve academic and professional success through expert guidance and supportive teaching.
           </p>
         </FadeIn>
-      </Container>
+      </Container> */}
 
       <Clients />
 
