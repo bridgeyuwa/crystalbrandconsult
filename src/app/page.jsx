@@ -21,24 +21,15 @@ function Clients() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-lg font-semibold tracking-wider text-white sm:text-left">
             We’ve helped students, families, and professionals achieve their goals
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
         <FadeInStagger faster>
-          <ul
-            role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
-          >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
-                <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
-                </FadeIn>
-              </li>
-            ))}
-          </ul>
+
+          <div className="text-white mt-5">— Moses Ekwu, CEO, Crystal Brand Educational Consult</div>
+
         </FadeInStagger>
       </Container>
     </div>
@@ -64,21 +55,11 @@ function CaseStudies({ caseStudies }) {
                 <h3>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
-                    <Image
-                      src={caseStudy.logo}
-                      alt={caseStudy.client}
-                      className="h-16 w-16"
-                      unoptimized
-                    />
+                    
                   </Link>
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
-                    className="font-semibold"
-                  >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
+                  
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
@@ -169,7 +150,6 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Crystal Brand Educational Consult', logo: logoStudyNexus }}
       >
         We chose Crystal Brand Educational Consult because of their outstanding reputation. They provided the academic support we needed, delivering exceptional results in a short time.
       </Testimonial>
