@@ -63,15 +63,14 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Empowering Academic Excellence">
+      <PageIntro eyebrow="About us" title="Facilitating Academic Excellence">
         <p>
-          Crystal Brand Educational Consult is a leading educational firm, offering top-notch, high-quality services that enhance academic performance and help clients realize their goals. Whether you want to secure your future or that of your children through qualitative education, we are here for you.
+          Crystal Brand Educational Consult is a leading educational firm, offering top-notch, high-quality services that enhance excellent academic performance and help clients realize their goals. Whether you want to secure your future or that of your children through qualitative education, we are here for you.
         </p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-            Our mission is to combine refined and practical teaching methodologies to help our clients achieve academic excellence. We provide a personalized approach for every learner, whether they are preparing for exams, struggling in class, or striving for the top.
-          </p>
-        </div>
+        <p className="mt-2">
+          We provide a personalized approach for every learner, whether they are preparing for exams, struggling in class, or striving for the top.
+        </p>
+
       </PageIntro>
       <Container className="mt-16">
         <SectionIntro title="Our Vision" />
@@ -83,7 +82,7 @@ export default async function About() {
           To combine both refined and practical teaching methodologies in attaining academic excellence for our clients.
         </div>
         <StatList>
-          <StatListItem value="500+" label="Students served" />
+          <StatListItem value="1000+" label="Students served" />
           <StatListItem value="10+" label="Years of experience" />
           <StatListItem value="98%" label="Exam success rate" />
         </StatList>
@@ -91,12 +90,6 @@ export default async function About() {
 
       <Values />
 
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Discover insights, tips, and stories from our experienced educators and clients."
-        pages={blogArticles}
-      />
 
       <ContactSection />
     </>
