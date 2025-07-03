@@ -33,12 +33,7 @@ function PageLink({ page }) {
         <h4 className="mt-3 text-sm font-semibold text-neutral-700">
           {page.title} 
           </h4>
-        <time
-          dateTime={page.date}
-          className="order-first text-sm text-neutral-600"
-        >
-          {formatDate(page.date)}
-        </time>
+        
         <p className="mt-2.5 text-base text-neutral-600">{page.description}</p>
         <Link
           href={page.href}
