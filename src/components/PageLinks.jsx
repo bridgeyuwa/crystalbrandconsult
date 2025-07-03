@@ -28,8 +28,11 @@ function PageLink({ page }) {
         className="relative flex flex-col items-start pl-8"
       >
         <h3 className="mt-6 text-base font-semibold text-neutral-950">
-          {page.title}
+          {page.client} 
         </h3>
+        <h4 className="mt-3 text-sm font-semibold text-neutral-700">
+          {page.title} 
+          </h4>
         <time
           dateTime={page.date}
           className="order-first text-sm text-neutral-600"
