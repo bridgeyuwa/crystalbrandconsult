@@ -16,6 +16,18 @@ const clients = [
   ['StudyNexus', logoStudyNexus],
 ]
 
+function ArrowIcon(props) {
+  return (
+    <svg viewBox="0 0 24 6" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 3 18 .5v2H0v1h18v2L24 3Z"
+      />
+    </svg>
+  )
+}
+
 function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
@@ -79,14 +91,20 @@ function CaseStudies({ caseStudies }) {
             </FadeIn>
           ))}
         </FadeInStagger>
-        <div className="mt-10 text-center">
+
+
+        <div className="mt-6 flex justify-center">
           <Link
             href="/work"
-            className="inline-block font-semibold text-neutral-700 hover:text-black"
+            className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+            aria-label={`View all services`}
           >
-            View all services →
+            View all services
+            <ArrowIcon className="w-6 flex-none fill-current" />
+            <span className="absolute inset-0" />
           </Link>
         </div>
+
 
       </Container>
     </>
