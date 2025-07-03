@@ -181,9 +181,10 @@ export default async function Home() {
           <div className="mt-8">
             <Link
               href="/services"
-              className="inline-block rounded-lg bg-neutral-900 px-6 py-3 text-white hover:bg-neutral-700"
+              className="inline-flex items-center gap-x-2 rounded-lg bg-neutral-900 px-6 py-3 text-white hover:bg-neutral-700"
             >
-              Explore Our Services →
+              Explore Our Services
+              <ArrowIcon className="w-6 flex-none fill-current" />
             </Link>
           </div>
         </FadeIn>
