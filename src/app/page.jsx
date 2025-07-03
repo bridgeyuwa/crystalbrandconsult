@@ -67,6 +67,9 @@ function CaseStudies({ caseStudies }) {
                   <span>Services</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
+                  {caseStudy.client}
+                </p>
+                <p className="mt-4 font-display text-base font-semibold text-neutral-950">
                   {caseStudy.title}
                 </p>
                 <p className="mt-4 text-base text-neutral-600">
@@ -76,6 +79,15 @@ function CaseStudies({ caseStudies }) {
             </FadeIn>
           ))}
         </FadeInStagger>
+        <div className="mt-10 text-center">
+          <Link
+            href="/work"
+            className="inline-block font-semibold text-neutral-700 hover:text-black"
+          >
+            View all services →
+          </Link>
+        </div>
+
       </Container>
     </>
   )
