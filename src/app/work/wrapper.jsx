@@ -16,9 +16,11 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
   return (
     <>
       <article className="mt-24 sm:mt-32 lg:mt-40">
+        
         <header>
-          <PageIntro eyebrow="Service" title={caseStudy.title} centered>
-            <p>{caseStudy.description}</p>
+          <PageIntro eyebrow="Service" title={caseStudy.client} centered>
+            <p className="text-2xl font-semibold mt-5">{caseStudy.title}</p>
+            <p className="mt-5">{caseStudy.description}</p>
           </PageIntro>
 
           <FadeIn>
