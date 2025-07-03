@@ -10,7 +10,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoStudyNexus from '@/images/clients/studynexus/logo-dark.svg'
-import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
 function CaseStudies({ caseStudies }) {
@@ -143,7 +142,7 @@ export default async function Work() {
         delivering exceptional results in a short time.
       </Testimonial>
 
-      <Clients />
+    
 
       <ContactSection />
     </>
