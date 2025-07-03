@@ -35,7 +35,7 @@ function CaseStudies({ caseStudies }) {
                       unoptimized
                     />
                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                      {caseStudy.client}
+                       {caseStudy.title}
                     </h3>
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
@@ -51,7 +51,7 @@ function CaseStudies({ caseStudies }) {
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
                   <p className="font-display text-4xl font-medium text-neutral-950">
-                    <Link href={caseStudy.href}>{caseStudy.title}</Link>
+                    <Link href={caseStudy.href}> {caseStudy.client}</Link>
                   </p>
                   <div className="mt-6 space-y-6 text-base text-neutral-600">
                     {caseStudy.summary.map((paragraph) => (
