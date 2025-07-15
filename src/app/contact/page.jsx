@@ -7,6 +7,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
+import Image from 'next/image'
 
 function TextInput({ label, ...props }) {
   let id = useId()
@@ -30,6 +31,7 @@ function TextInput({ label, ...props }) {
   )
 }
 
+
 function ContactDetails() {
   return (
     <FadeIn>
@@ -45,46 +47,69 @@ function ContactDetails() {
           Call or WhatsApp us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          <div className='space-y-6'>
-            <div>
-              <dt className="font-semibold text-neutral-950">Mr. Moses Ekwu (CEO/MD)</dt>
-              <dd className="space-y-1">
-                <Link href="tel:+2347038366784" className="text-neutral-600 hover:text-neutral-950 block">
-                  0703 836 6784
-                </Link>
-                <Link href="tel:+2348138676772" className="text-neutral-600 hover:text-neutral-950 block">
-                  0813 867 6772
-                </Link>
-              </dd>
+          <div className="space-y-6">
+
+            {/* Moses */}
+            <div className="flex items-start gap-4">
+              <Image
+                src="/images/moses.jpg"
+                alt="Mr. Moses Ekwu"
+                width={60}
+                height={60}
+                style={{ width: '60px', height: '60px' }}
+                className="rounded-full object-cover border border-neutral-300"
+              />
+              <div>
+                <dt className="font-semibold text-neutral-950">Mr. Moses Ekwu (CEO/MD)</dt>
+                <dd className="space-y-1">
+                  <Link href="tel:+2347038366784" className="text-neutral-600 hover:text-neutral-950 block">
+                    0703 836 6784
+                  </Link>
+                  <Link href="tel:+2348138676772" className="text-neutral-600 hover:text-neutral-950 block">
+                    0813 867 6772
+                  </Link>
+                </dd>
+              </div>
             </div>
-            <div>
-              <dt className="font-semibold text-neutral-950">Mr. Nathan (Coordinator)</dt>
-              <dd className="space-y-1">
-                <Link href="tel:+2347036600049" className="text-neutral-600 hover:text-neutral-950 block">
-                  0703 660 0049
-                </Link>
-                <Link href="tel:+2347016000401" className="text-neutral-600 hover:text-neutral-950 block">
-                  0701 600 0401
-                </Link>
-              </dd>
+
+            {/* Nathan */}
+            <div className="flex items-start gap-4">
+              <Image
+                src="/images/nathan.jpg"
+                alt="Mr. Nathan"
+                width={60}
+                height={60}
+                style={{ width: '60px', height: '60px' }}
+                className="rounded-full object-cover border border-neutral-300"
+              />
+              <div>
+                <dt className="font-semibold text-neutral-950">Mr. Nathan (Coordinator)</dt>
+                <dd className="space-y-1">
+                  <Link href="tel:+2347036600049" className="text-neutral-600 hover:text-neutral-950 block">
+                    0703 660 0049
+                  </Link>
+                  <Link href="tel:+2347016000401" className="text-neutral-600 hover:text-neutral-950 block">
+                    0701 600 0401
+                  </Link>
+                </dd>
+              </div>
             </div>
           </div>
 
-          <div className='space-y-6'>
-          <div>
-            <dt className="font-semibold text-neutral-950">WhatsApp</dt>
-            <dd>
-              <Link
-                href="https://wa.me/2348138676772"
-                className="text-neutral-600 hover:text-neutral-950"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
-              </Link>
-            </dd>
-          </div>
-          
+          <div className="space-y-6">
+            <div>
+              <dt className="font-semibold text-neutral-950">WhatsApp</dt>
+              <dd>
+                <Link
+                  href="https://wa.me/2348138676772"
+                  className="text-green-500 hover:text-green-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chat on WhatsApp
+                </Link>
+              </dd>
+            </div>
           </div>
         </dl>
       </Border>
@@ -139,6 +164,7 @@ function ContactDetails() {
   )
 }
 
+
 export const metadata = {
   title: 'Contact Us',
   description:
@@ -156,7 +182,7 @@ export default function Contact() {
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-y-24">
-         
+
           <ContactDetails />
         </div>
       </Container>
