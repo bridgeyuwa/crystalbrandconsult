@@ -59,7 +59,7 @@ function AcademicFocus() {
             No More Academic Struggles
           </h2>
           <p className="max-w-3xl text-lg text-neutral-300">
-            Address your child/ward's attention deficit disorder, mathematics incompetence, quantitative difficulty, negative attitudes to mathematics, poor writing, and poor verbal skills.
+            Address your child/ward&rsquo;s attention deficit disorder, mathematics incompetence, quantitative difficulty, negative attitudes to mathematics, poor writing, and poor verbal skills.
           </p>
           <div className="italic mt-4">
             — <span className="font-semibold">Zaria Nathan</span>, PhD Researcher, Measurement and Evaluation/Psychometrics (Coordinator)
