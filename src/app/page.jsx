@@ -49,6 +49,28 @@ function Clients() {
   )
 }
 
+
+function AcademicFocus() {
+  return (
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+      <Container>
+        <FadeIn className="flex flex-col gap-y-6 text-white">
+          <h2 className="text-3xl font-display font-semibold tracking-wider">
+            No More Academic Struggles
+          </h2>
+          <p className="max-w-3xl text-lg text-neutral-300">
+            Address your child/ward's attention deficit disorder, mathematics incompetence, quantitative difficulty, negative attitudes to mathematics, poor writing, and poor verbal skills.
+          </p>
+          <div className="italic mt-4">
+            — <span className="font-semibold">Zaria Nathan</span>, PhD Researcher, Measurement and Evaluation/Psychometrics (Coordinator)
+          </div>
+        </FadeIn>
+      </Container>
+    </div>
+  )
+}
+
+
 function CaseStudies({ caseStudies }) {
   return (
     <>
@@ -206,6 +228,9 @@ export default async function Home() {
       <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
+
+      <AcademicFocus />
+
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
